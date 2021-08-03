@@ -22,4 +22,9 @@ public class HelloController {
     public String hi(){
         return "controller直接从主分支拉取的分支 hi";
     }
+
+    @RequestMapping("/hellobendi")
+    public String helloBenDi(){
+        return "controller直接从主分支拉取的分支修改 helloBenDi";
+    }
 }
