@@ -20,6 +20,11 @@ public class HelloController {
 
     @RequestMapping("/hi")
     public String hi(){
-        return "controller直接从主分支拉取的分支 hi";
+        return "controller直接从远程主分支拉取的分支 hi";
+    }
+
+    @RequestMapping("/he")
+    public String he(){
+        return "controller直接从本地主分支拉取的分支 he";
     }
 }
