@@ -17,4 +17,9 @@ public class HelloController {
         helloService.hello();
         return "controller主分支 hello";
     }
+
+    @RequestMapping("/hi")
+    public String hi(){
+        return "controller直接从主分支拉取的分支 hi";
+    }
 }
